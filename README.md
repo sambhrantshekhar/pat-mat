@@ -1,16 +1,21 @@
-# React + Vite
+# String Matching Algorithm Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, web-based visualization and benchmarking tool designed to compare the performance and execution of fundamental string matching algorithms. Built for educational purposes, this tool allows users to input custom text or generate massive sample datasets to observe how different algorithms handle search operations in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Interactive Benchmarking:** Manually input text and patterns, or use the **Random Sample Data** generator to test algorithms against massive strings.
+* **Algorithm Implementations:** Features custom-built logic for:
+  * Naïve String Matching
+  * Knuth-Morris-Pratt (KMP)
+  * Rabin-Karp (Rolling Hash)
+* **Comprehensive Metrics:** Tracks and displays the exact match indices, total comparisons made, and theoretical time complexities (Best/Worst cases).
+* **Adaptive Time Formatting:** Accurately measures execution time using `performance.now()`. Automatically scales to scientific notation or microseconds (µs) for operations taking `< 0.001 ms` to prevent `0.000 ms` readouts.
+* **Visual Comparisons:** Includes a "Run All" feature that generates side-by-side Bar Charts comparing the total comparisons and actual time taken across all three algorithms.
+* **Modern UI/UX:** Fully responsive design featuring a Dark/Light mode toggle and a clean, academic aesthetic.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend Framework:** [React](https://reactjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Data Visualization:** [Recharts](https://recharts.org/)
